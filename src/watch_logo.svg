@@ -15,8 +15,11 @@
    width="204.8"
    height="136.32001"
    viewBox="0 0 204.8 136.32001"
-   sodipodi:docname="watch.svg"
-   inkscape:version="0.92.3 (unknown)">
+   sodipodi:docname="watch_logo.svg"
+   inkscape:version="0.92.3 (unknown)"
+   inkscape:export-filename="/home/john/dev/f8/watch/watch/watch_logo.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -30,7 +33,18 @@
     </rdf:RDF>
   </metadata>
   <defs
-     id="defs6" />
+     id="defs6">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath37">
+      <circle
+         style="opacity:1;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:1.24178481;stroke-opacity:1"
+         id="circle39"
+         cx="102.4"
+         cy="68.160004"
+         r="66.343704" />
+    </clipPath>
+  </defs>
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -40,8 +54,8 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="652"
-     inkscape:window-height="480"
+     inkscape:window-width="1366"
+     inkscape:window-height="744"
      id="namedview4"
      showgrid="false"
      inkscape:zoom="1.5722656"
@@ -49,7 +63,7 @@
      inkscape:cy="68.160004"
      inkscape:window-x="0"
      inkscape:window-y="24"
-     inkscape:window-maximized="0"
+     inkscape:window-maximized="1"
      inkscape:current-layer="svg2" />
   <image
      width="204.8"
@@ -1235,5 +1249,6 @@ zgzjiHFaVqHqI2PSKKYn/hT1g7/Kq2RM4ThvZW442+Ffdf/Z
 "
      id="image10"
      x="0"
-     y="0" />
+     y="0"
+     clip-path="url(#clipPath37)" />
 </svg>

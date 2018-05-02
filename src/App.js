@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './watch.svg';
+import logo from './watch_logo.svg';
 import './App.css';
 
 import Map from './components/Map'
