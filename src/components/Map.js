@@ -5,7 +5,7 @@ const incidents = [
   { id: 0, latAdd: 0.010029, lngAdd: 0.010031 },
   { id: 1, latAdd: 0.000023, lngAdd: 0.000054 },
   { id: 2, latAdd: 0.020098, lngAdd: 0.000064 },
-  { id: 3, latAdd: 0.023163, lngAdd: 0.010055 },
+  { id: 3, latAdd: 0.043163, lngAdd: 0.010055 },
 ];
 
 class Map extends Component {
@@ -34,20 +34,23 @@ class Map extends Component {
     }
   }
 
+  incidentClick(incident) {
+    console.log('an incident has been clicked: ', incident);
+  }
+
   render() {
     const GoogleMapExample = withGoogleMap(props => (
       <GoogleMap
         defaultCenter={{ lat: this.state.currentLocation.lat, lng: this.state.currentLocation.lng }}
         defaultZoom={13}
       > 
-        {console.log(incidents, this.state.currentLocation)}
         {incidents.map(incident => (
           <Marker
             key={incident.id}
-            position={{ lat: incident.latAdd + this.state.currentLocation.lat, lng: incident.lngAdd + this.state.currentLocation.lng }} />
+            position={{ lat: incident.latAdd + this.state.currentLocation.lat, lng: incident.lngAdd + this.state.currentLocation.lng }}
+            onClick={() => this.incidentClick(incident)}
+          />
         ))}
-        {/* <Marker key={0} position={{ lat: this.state.currentLocation.lat, lng: this.state.currentLocation.lng }} /> 
-        <Marker key={1} position={{ lat: this.state.currentLocation.lat + 0.020611, lng: this.state.currentLocation.lng + 0.020711 }} /> */}
       </GoogleMap>
     ));
 
