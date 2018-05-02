@@ -5,7 +5,7 @@ const incidents = [
   { id: 0, latAdd: 0.010029, lngAdd: 0.010031 },
   { id: 1, latAdd: 0.000023, lngAdd: 0.000054 },
   { id: 2, latAdd: 0.020098, lngAdd: 0.000064 },
-  { id: 3, latAdd: 0.043163, lngAdd: 0.010055 },
+  { id: 3, latAdd: -0.031263, lngAdd: -0.010055 },
 ];
 
 class Map extends Component {
@@ -16,7 +16,8 @@ class Map extends Component {
       currentLocation: {
         lat: 40.756795,
         lng: -73.954298
-      }
+      },
+      displayIncident: false
     }
   }
 
@@ -35,6 +36,7 @@ class Map extends Component {
   }
 
   incidentClick(incident) {
+    this.setState({displayIncident: !this.state.displayIncident})
     console.log('an incident has been clicked: ', incident);
   }
 
@@ -57,7 +59,7 @@ class Map extends Component {
     return (
       <div>
         <GoogleMapExample
-          containerElement={<div style={{ height: `100vh`, width: '100vw' }} />}
+          containerElement={<div style={{ height: `76vh`, width: '96vw' }} />}
           mapElement={<div style={{ height: `100%` }} />}
         />
       </div>
